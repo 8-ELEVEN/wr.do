@@ -23,12 +23,26 @@ WR.DO is a all-in-one web utility platform featuring short links with analytics,
   - Unlimited mailbox creation
   - Receive unlimited emails (powered by Cloudflare Email Worker)
   - Send emails (powered by Resend)
+  - Support catch-all emails
+  - Support push to telegram groups
   - API endpoints for mailbox creation
   - API endpoints for inbox retrieval
 
 - 🌐 **Subdomain Management Service**:
   - Manage DNS records across multiple Cloudflare accounts and domains
   - Create various DNS record types (CNAME, A, TXT, etc.)
+  - Support enabling application mode (user submission, admin approval)
+  - Support email notification of administrator and user domain application status
+
+- 💳 **Cloud Storage Service**
+  - Connects to multiple channels (S3 API) cloud storage platforms (Cloudflare R2, AWS S3)
+  - Supports single-channel multi-bucket configuration
+  - Dynamic configuration (user quota settings) for file upload size limits
+  - Supports drag-and-drop, batch, and chunked file uploads
+  - Supports batch file deletion
+  - Quickly generates short links and QR codes for files
+  - Supports online preview of certain file types
+  - Supports file uploads via API calls
 
 - 📡 **Open API Module**:
   - Website metadata extraction API
@@ -42,6 +56,7 @@ WR.DO is a all-in-one web utility platform featuring short links with analytics,
   - Multi-dimensional dashboard with website analytics
   - Dynamic service configuration (toggle short links, email, subdomain management)
   - User management (permissions, quotas, account control)
+  - Dynamically configure login methods (Google, GitHub, Magic Link, Credentials, LinuxDO)
   - Centralized short link administration
   - Centralized email management
   - Centralized subdomain administration

@@ -10,9 +10,13 @@ export const sidebarLinks: SidebarNavItem[] = [
     items: [
       { href: "/dashboard", icon: "dashboard", title: "Dashboard" },
       { href: "/dashboard/urls", icon: "link", title: "Short Urls" },
-      { href: "/emails", icon: "mail", title: "Emails" },
       { href: "/dashboard/records", icon: "globe", title: "DNS Records" },
-      { href: "/chat", icon: "messages", title: "WRoom" },
+      { href: "/emails", icon: "mail", title: "Emails" },
+      {
+        href: "/dashboard/storage",
+        icon: "storage",
+        title: "Cloud Storage",
+      },
     ],
   },
   {
@@ -55,12 +59,6 @@ export const sidebarLinks: SidebarNavItem[] = [
         authorizeOnly: UserRole.ADMIN,
       },
       {
-        href: "/admin/domains",
-        icon: "globeLock",
-        title: "Domains",
-        authorizeOnly: UserRole.ADMIN,
-      },
-      {
         href: "/admin/users",
         icon: "users",
         title: "Users",
@@ -78,15 +76,27 @@ export const sidebarLinks: SidebarNavItem[] = [
         title: "Records",
         authorizeOnly: UserRole.ADMIN,
       },
+      {
+        href: "/admin/storage",
+        icon: "storage",
+        title: "Cloud Storage Manage",
+        authorizeOnly: UserRole.ADMIN,
+      },
+      {
+        href: "/admin/system",
+        icon: "settings",
+        title: "System Settings",
+        authorizeOnly: UserRole.ADMIN,
+      },
     ],
   },
   {
     title: "OPTIONS",
     items: [
-      { href: "/dashboard/settings", icon: "settings", title: "Settings" },
+      { href: "/dashboard/settings", icon: "userSettings", title: "Settings" },
       { href: "/docs", icon: "bookOpen", title: "Documentation" },
       {
-        href: siteConfig.links.feedback,
+        href: "/feedback",
         icon: "messageQuoted",
         title: "Feedback",
       },
